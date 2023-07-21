@@ -7,7 +7,7 @@ export default function MainBanner() {
     <main className="h-[650px] bg-[url('/bg2.jpg')] bg-cover relative bg-center">
       <div className="flexrow">
         <header className="relative flexrow md:justify-between w-full px-[12%] bg-gradient-to-t from-transparent to-black/70 hover:bg-black/10 hover:to-black/70 hover:backdrop-blur transition text-white">
-          <div className="bg-white/90 backdrop-blur py-3 px-5 -mb-3"> 
+          <div className="bg-white/90 backdrop-blur py-3 px-5 -mb-3">
             <img src='/logo.png' alt='SICFIRE Logo' className="main-logo"/>
           </div>
           <nav className="hidden md:block">
