@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .cont {
-  @apply bg-white border-slate-300 border-solid p-5 rounded-md text-gray-500 shadow-lg
+  @apply bg-white border-slate-300 border-solid p-5 text-gray-500 shadow-lg
 }
 
 .flexcol {
@@ -12,4 +12,24 @@
 
 .flexrow {
   @apply flex justify-center items-center
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-zinc-900
+}
+
+p {
+  @apply text-zinc-800
+}
+
+h1 {
+  @apply tracking-wider text-2xl font-extrabold
+}
+
+img.main-logo {
+  max-width: 60px;
+}
+
+button, a {
+  cursor: pointer;
 }
