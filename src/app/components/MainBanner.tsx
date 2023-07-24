@@ -4,10 +4,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function MainBanner() {
   return (
-    <main className="h-[650px] bg-[url('/bg2.jpg')] bg-cover relative bg-center">
+    <main className="h-[650px] bg-[url('/bg2.jpg')] bg-cover relative bg-center bg-fixed">
       <div className="flexrow">
-        <header className="relative flexrow md:justify-between w-full px-[12%] bg-gradient-to-t from-black/30 hover:bg-black/50 to-black/70 backdrop-blur transition text-white shadow-lg">
-          <div className="bg-white/90 backdrop-blur shadow-xl -mb-6 w-24 h-24 flexrow">
+        <header className="flexrow md:justify-between w-full px-[12%] bg-gradient-to-t from-black/30 hover:bg-black/50 to-black/70 backdrop-blur transition text-white shadow-lg fixed top-0 z-50">
+          <div className="bg-white/90 backdrop-blur shadow-lg -mb-6 w-24 h-24 flexrow">
             <img src='/logo.png' alt='SICFIRE Logo' className="main-logo"/>
           </div>
           <nav className="hidden md:block">
