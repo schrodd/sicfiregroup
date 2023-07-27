@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .cont {
   @apply bg-white border-slate-300 border-solid p-5 text-gray-500 shadow-lg
 }
@@ -32,4 +36,16 @@ button, a {
 
 .slow-animation {
   transition-duration: 500ms;
+}
+
+::-webkit-scrollbar {
+  @apply bg-zinc-900 w-2
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-500
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-600
 }

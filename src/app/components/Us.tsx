@@ -2,7 +2,7 @@ import Title from "./Title"
 
 function Container({right, text, imageUrl}: {right: boolean, text: string, imageUrl: string}) {
   return (
-    <div className={`${right ? '-mr-16 md:border-r-8' : '-ml-16 md:border-l-8'} border-b-8 md:border-b-0 mx-5 md:flex md:flex-row md:items-center p-0 bg-gradient-to-tr from-zinc-900 to-zinc-800 shadow-xl border-orange-600 max-w-[850px]`}>
+    <div className={`${right ? 'md:-mr-16 md:border-r-8' : 'md:-ml-16 md:border-l-8'} border-b-8 md:border-b-0 md:mx-5 md:flex md:flex-row md:items-center p-0 bg-gradient-to-tr from-zinc-900 to-zinc-800 shadow-xl border-orange-600 max-w-[850px]`}>
       <p className={`text-justify m-5 md:my-0 md:mx-10 text-sm`}>{text}</p>
       <img src={imageUrl} alt="About us text container" className={`${!right && '-order-1'} w-full h:auto md:w-auto md:h-52`}/>
     </div>
@@ -29,7 +29,7 @@ export default function Us() {
     },
   ]
   return (
-    <section className="flexcol relative text-white py-16 gap-10">
+    <section className="flexcol relative text-white px-5 py-10 md:py-16 gap-10">
       <Title>NOSOTROS</Title>
       {content.map((e,i) => (
         <Container text={e.text} right={e.isRight} imageUrl={e.imageUrl} key={i}/>

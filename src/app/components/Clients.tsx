@@ -4,11 +4,11 @@ import Title from "./Title";
 
 export default function Clients() {
   return (
-    <section className="flexcol relative text-white py-16 gap-10 px-[15%]">
+    <section className="flexcol relative text-white p-10 md:py-16 gap-10 md:px-[15%]">
       <Title>CLIENTES</Title>
       <div className="flex flex-wrap max-w-[1200px] w-full gap-y-5">
         <Replicate n={8}>
-          <div className="flex flex-col justify-center px-4 min-h-[140px] shadow transition-all slow-animation w-1/4">
+          <div className="flex flex-col justify-center px-4 min-h-[140px] shadow transition-all slow-animation w-full md:w-1/4">
             <div className="w-full bg-white bg-[url('https://1000marcas.net/wp-content/uploads/2021/06/YPF-logo.png')] h-16 bg-contain bg-center bg-no-repeat mb-2 border-b-4 border-orange-600">
             </div>
             <p className="leading-5 font-semibold">Yacimientos Petrolíferos Fiscales S.A. (YPF)</p>
