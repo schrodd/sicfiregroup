@@ -1,6 +1,6 @@
 export interface serviceDropdownItems {
   title: string
-  text: string
+  content: React.ReactNode
   imageUrl: string
   active: boolean
 }

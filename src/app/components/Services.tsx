@@ -32,11 +32,11 @@ function SecondSub(){
     <div className='md:flex md:flex-row md:items-center max-w-[1200px] gap-5'>
       <div className='flex-1'>
         <p className='text-xs font-bold tracking-widest text-orange-600 mb-1'>NUESTRA MISIÓN</p>
-        <p className='text-2xl font-semibold mb-3'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+        <p className='text-2xl font-semibold mb-3 md:mr-5'>Ofrecer un excelente servicio con el compromiso de proteger vidas, bienes y el medio ambiente.</p>
       </div>
       <div className='text-zinc-500 text-sm flex-1 text-justify flexcol gap-3'>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet  orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet  olore magna aliquam erat volutpat.</p>
-        <p> Ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie  onsequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto. </p>
+        <p>Brindamos soluciones innovadoras y de alta calidad en ingeniería contra incendios, siempre ajustado a las necesidades del cliente y según las leyes y normas que rigen el campo de la seguridad contra incendios.</p>
+        <p>Nos comprometemos a ofrecer servicios y productos especializados que excedan las expectativas de nuestros clientes y cumplan con los más altos estándares de seguridad. Trabajamos con pasión y dedicación para crear entornos más seguros que garanticen tranquilidad y seguridad a nuestros clientes.</p>
       </div>
     </div>
   )
@@ -52,7 +52,7 @@ function ThirdSub({toggle, items}: {toggle: (n:number) => void, items: serviceDr
             <PiCaretRightLight className={`${e.active && 'rotate-90'} transition w-6 h-6`}/>
           </button>
           <div className={`${e.active ? 'max-h-none px-8 py-5 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white shadow-lg slow-animation`}>
-            {e.text}
+            {e.content}
           </div>
         </div>
       ))}
@@ -60,22 +60,16 @@ function ThirdSub({toggle, items}: {toggle: (n:number) => void, items: serviceDr
   )
 }
 
+function DisIng(){
+  return (
+    <h1>hola</h1>
+  )
+}
+
 const dropdownItems: serviceDropdownItems[] = [
   {
-    title: 'Sistema de extinción por gases',
-    text: 'Ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie  onsequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.',
-    imageUrl: '',
-    active: false
-  },
-  {
-    title: 'Mantenimiento de instalaciones fijas contra incendios',
-    text: 'Ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie  onsequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.',
-    imageUrl: '',
-    active: false
-  },
-  {
-    title: 'Consultoría de seguridad, higiene y ambiente',
-    text: 'Ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie  onsequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.',
+    title: 'Diseño e ingeniería contra incendios',
+    content: <DisIng/>,
     imageUrl: '',
     active: false
   }

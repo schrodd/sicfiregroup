@@ -20,6 +20,9 @@ export default function MainBanner() {
                 <NavLink href=''>SERVICIOS</NavLink>
               </li>
               <li className="tracking-wider text-sm font-semibold mt-1">
+                <NavLink href=''>CLIENTES</NavLink>
+              </li>
+              <li className="tracking-wider text-sm font-semibold mt-1">
                 <NavLink href=''>CONTACTO</NavLink>
               </li>
               <li><LocalPhoneIcon className='hover:text-orange-600 transition'/></li>
