@@ -14,17 +14,22 @@ export default function Us() {
   const content = [
     {
       isRight: true,
-      text: 'Proveemos servicios de ingeniería contra incendios, somos una empresa conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.',
+      text: `Somos SIC FIRE, empresa que provee servicios de ingeniería contra incendios, conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.`,
       imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
     },
     {
       isRight: false,
-      text: 'Proveemos servicios de ingeniería contra incendios, somos una empresa conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.',
+      text: `Contamos con total conocimiento y aplicación de las normas nacionales e internacionales, brindándole a nuestros clientes las herramientas necesarias para cumplir con los requerimientos en sus proyectos, garantizando así el cumplimiento total de las normativas Argentinas y estándares internacionales como los de la NFPA (National Fire Protection Association).`,
       imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
     },
     {
       isRight: true,
-      text: 'Proveemos servicios de ingeniería contra incendios, somos una empresa conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.',
+      text: `SIC FIRE nace a partir del cese de actividades de SICI SRL, empresa líder en el mercado relacionada a la protección contra incendios, tomando el know-how adquirido en más de 45 años en el mercado, con profesionales y técnicos que han transitado muchos años el negocio de la ingeniería contra incendios, servicios de mantenimiento y capacitación, incorporando además el servicio de Seguridad, Higiene y Ambiente comprendiendo asesoramiento, capacitación, estudios y análisis especializados en cargas de fuego.`,
+      imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
+    },
+    {
+      isRight: false,
+      text: `Abordamos la problemática de los incendios desde distintas necesidades de los clientes, es decir, ante requerimientos normativos del estado, de normas internas de las empresas, solicitudes de compañías aseguradoras o la preocupación propia de directivos o propietarios. Trabajamos con mucha vocación al servicio de la seguridad en función de disminuir riesgos y con un solo objetivo principal: Salvaguardar vidas y proteger los bienes materiales para garantizar la continuidad del negocio.`,
       imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
     },
   ]
