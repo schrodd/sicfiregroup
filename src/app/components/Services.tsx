@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { serviceDropdownItems } from '../types/Types'
 import { GiWaterTank, GiShower, GiRingingAlarm, GiChemicalBolt, GiSteam } from 'react-icons/gi'
 import { AiFillPlusCircle } from 'react-icons/ai'
+import ServiceDetailsSwiper from './ServiceDetailsSwiper'
 
 const featuredServices: {name: string, icon: React.ReactNode}[] = [
   { name: 'Tanques de reserva de agua', icon: <GiWaterTank className='w-12 h-12'/> },
@@ -73,6 +74,7 @@ function ThirdSub({toggle, items}: {toggle: (n:number) => void, items: serviceDr
 function DisIngService(){
   return (
     <div className='flex flex-col gap-3'>
+      <ServiceDetailsSwiper/>
       <p className=''>Desarrollo de ingeniería teniendo como base las últimas versiones de la Norma Nacional IRAM 3597, Ley Nacional 19587 y las Standares NFPA (National Fire Protection Association) aplicables, en los siguientes sistemas de agua contra incendios:</p>
       <ul className='list-disc list-inside'>
         <li>Sistemas de Rociadores Automáticos</li>
@@ -94,8 +96,13 @@ function DisIngService(){
 function ObrasService(){
   return (
     <div className='flex flex-col gap-3'>
+      <div className='flex flex-col md:flex-row gap-1 drop-shadow mb-2 overflow-hidden pt-2'>
+        <img src="/serv/2/1.png" alt="" className='flex-grow md:w-1/3'/>
+        <img src="/serv/2/2.png" alt="" className='flex-grow md:w-1/3'/>
+        <img src="/serv/2/3.png" alt="" className='flex-grow md:w-1/3'/>
+      </div>
       <p className=''>Contamos con personal de jefatura y supervisión de obras con amplia experiencia en el rubro de ingeniería contra incendios, contamos con equipamiento y herramental propio para todas las especialidades antes descritas.</p>
-      <p>Construcción de obras llave en mano (Lump Sum)</p>
+      <p>Construcción de obras llave en mano (Lump Sum).</p>
     </div>
   )
 }
@@ -164,7 +171,7 @@ export default function Services() {
     })
   }
   return (
-    <section className="bg-gradient-to-t from-zinc-300 to-zinc-100 py-10 md:py-16 flexcol px-[10%] md:px-[15%] gap-16">
+    <section id='servicios' className="bg-gradient-to-t from-zinc-300 to-zinc-100 py-10 md:py-16 flexcol px-[10%] md:px-[15%] gap-16">
       <FirstSub />
       <SecondSub />
       <ThirdSub toggle={toggleDropdown} items={dropdown}/>

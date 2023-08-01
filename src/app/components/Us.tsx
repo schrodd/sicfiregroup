@@ -15,26 +15,26 @@ export default function Us() {
     {
       isRight: true,
       text: `Somos SIC FIRE, empresa que provee servicios de ingeniería contra incendios, conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.`,
-      imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
+      imageUrl: '/us/1.png'
     },
     {
       isRight: false,
       text: `Contamos con total conocimiento y aplicación de las normas nacionales e internacionales, brindándole a nuestros clientes las herramientas necesarias para cumplir con los requerimientos en sus proyectos, garantizando así el cumplimiento total de las normativas Argentinas y estándares internacionales como los de la NFPA (National Fire Protection Association).`,
-      imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
+      imageUrl: '/us/2.png'
     },
     {
       isRight: true,
       text: `SIC FIRE nace a partir del cese de actividades de SICI SRL, empresa líder en el mercado relacionada a la protección contra incendios, tomando el know-how adquirido en más de 45 años en el mercado, con profesionales y técnicos que han transitado muchos años el negocio de la ingeniería contra incendios, servicios de mantenimiento y capacitación, incorporando además el servicio de Seguridad, Higiene y Ambiente comprendiendo asesoramiento, capacitación, estudios y análisis especializados en cargas de fuego.`,
-      imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
+      imageUrl: '/us/3.png'
     },
     {
       isRight: false,
       text: `Abordamos la problemática de los incendios desde distintas necesidades de los clientes, es decir, ante requerimientos normativos del estado, de normas internas de las empresas, solicitudes de compañías aseguradoras o la preocupación propia de directivos o propietarios. Trabajamos con mucha vocación al servicio de la seguridad en función de disminuir riesgos y con un solo objetivo principal: Salvaguardar vidas y proteger los bienes materiales para garantizar la continuidad del negocio.`,
-      imageUrl: 'https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg'
+      imageUrl: '/us/4.png'
     },
   ]
   return (
-    <section className="flexcol relative text-white px-5 py-10 md:py-16 gap-10">
+    <section id='nosotros' className="flexcol relative text-white px-5 py-10 md:py-16 gap-10">
       <Title>NOSOTROS</Title>
       {content.map((e,i) => (
         <Container text={e.text} right={e.isRight} imageUrl={e.imageUrl} key={i}/>

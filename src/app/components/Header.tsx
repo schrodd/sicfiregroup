@@ -12,19 +12,19 @@ export default function Header(){
       <nav className="hidden md:block">
         <ul className="flexrow gap-4 drop-shadow">
           <li className="tracking-wider text-sm font-semibold mt-1">
-            <NavLink href=''>NOSOTROS</NavLink>
+            <NavLink href='#nosotros'>NOSOTROS</NavLink>
           </li>
           <li className="tracking-wider text-sm font-semibold mt-1">
-            <NavLink href=''>SERVICIOS</NavLink>
+            <NavLink href='#servicios'>SERVICIOS</NavLink>
           </li>
           <li className="tracking-wider text-sm font-semibold mt-1">
-            <NavLink href=''>CLIENTES</NavLink>
+            <NavLink href='#clientes'>CLIENTES</NavLink>
           </li>
           <li className="tracking-wider text-sm font-semibold mt-1">
-            <NavLink href=''>CONTACTO</NavLink>
+            <NavLink href='#contacto'>CONTACTO</NavLink>
           </li>
-          <li><LocalPhoneIcon className='hover:text-orange-600 transition'/></li>
-          <li><LinkedInIcon className='hover:text-orange-600 transition'/></li>
+          <li><a href="tel:1122550255"><LocalPhoneIcon className='hover:text-orange-600 transition'/></a></li>
+          <li><a href="https://www.linkedin.com/in/sic-fire-group-109895231/" rel='noreferrer' target='_blank'><LinkedInIcon className='hover:text-orange-600 transition'/></a></li>
         </ul>
       </nav>
     </header>

@@ -10,8 +10,12 @@ export default function MoreInfo() {
       un único objetivo principal: <b>salvaguardar vidas y proteger los bienes materiales para garantizar la
       continuidad del negocio.</b></p>
       <div className="md:mx-5 md:flex md:flex-row md:items-center p-0 bg-gradient-to-t from-zinc-200 to-zinc-100 shadow-lg max-w-[1000px] my-5">
-        <p className="md:text-justify m-5 md:my-0 md:mx-10 text-zinc-500">Proveemos servicios de ingeniería contra incendios, somos una empresa conformada por profesionales y técnicos con alta experiencia y notablemente calificados en el área de protección contra incendios y seguridad humana, abarcamos distintos sectores desde la higiene y seguridad hasta la instalación y mantenimiento de sistemas contra incendios.</p>
-        <img src='https://img.freepik.com/premium-photo/young-man-engineer-working-factory_1303-28457.jpg' alt="About us text container" className={`w-full h:auto md:w-auto md:h-52`}/>
+        <div className='m-5 md:my-0 md:mx-10 md:py-5'>
+          <p className='text-xs font-bold tracking-widest text-orange-600 mb-1 w-fit'>NOVEDAD</p>
+          <p className="md:text-justify text-zinc-500 text-sm">Incorporamos el diseño y fabricación de tanques de reserva de agua tanto para el cumplimiento de normas locales como de normas internacionales. Diseñamos tanques de reserva de agua para el sistema de extinción de planta o negocio, garantizamos y aseguramos un suministro constante y confiable para los sistemas de extinción todos diseñados bajo estrictas normas y las más exigentes siempre a medida del proyecto y necesidad de cada cliente.
+          </p>
+        </div>
+        <img src='/agua.jpg' alt="About us text container" className={`w-full h:auto md:w-auto md:h-52`}/>
       </div>
     </section>
   )

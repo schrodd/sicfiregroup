@@ -26,18 +26,10 @@ export default function Footer() {
       <div className="flex-1 tracking-wider font-light">
         <h3 className="border-b border-white mb-2 pb-1 font-semibold">Secciones</h3>
         <ul className="text-xs list-disc list-inside text-white/70">
-          <li>Nosotros</li>
-          <li>Servicios</li>
-          <li>Clientes</li>
-          <li>Contacto</li>
-        </ul>
-      </div>
-      <div className="flex-1 tracking-wider font-light">
-        <h3 className="border-b border-white mb-2 pb-1 font-semibold">Servicios</h3>
-        <ul className="text-xs list-disc list-inside text-white/70">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div className="flex-1 tracking-wider font-light">
