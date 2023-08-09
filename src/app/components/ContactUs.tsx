@@ -15,7 +15,7 @@ export default function ContactUs() {
     <section id='contacto' className="flex bg-gradient-to-t from-zinc-300 to-zinc-100">
       <div className="md:w-1/2 p-10 md:pl-[15%] md:py-16 md:pr-10">
         <h2 className='border-l-8 border-orange-600 pl-3 mb-5'>CONTACTANOS</h2>
-        <form className="flex flex-wrap gap-y-3" action="https://formsubmit.co/contacto@touchandgrow.com.ar" method="POST" id='contact-form'>
+        <form className="flex flex-wrap gap-y-3" action="https://formsubmit.co/infosicfire@gmail.com" method="POST" id='contact-form'>
           <FormItem name='name' label='Nombre' type='text'/>
           <FormItem name='email' label='Email' type='email'/>
           <FormItem name='tel' label='Teléfono' type='number'/>
