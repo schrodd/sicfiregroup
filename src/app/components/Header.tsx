@@ -6,8 +6,8 @@ import NavLink from './NavLink';
 export default function Header(){
   return (
     <header className="flexrow md:justify-between w-full px-[12%] bg-gradient-to-t from-black/30 hover:bg-black/50 to-black/70 backdrop-blur transition text-white shadow-lg fixed top-0 z-50">
-      <a href='/' className='bg-white/90 backdrop-blur shadow-lg -mb-6 w-24 h-24 flexrow hover:bg-white transition'>
-        <img src='/logo.png' alt='SICFIRE Logo' className="main-logo"/>
+      <a href='/' className='bg-white backdrop-blur shadow-lg -mb-6 w-20 h-20 md:w-24 md:h-24 flexrow hover:bg-white transition'>
+        <img src='/logo.png' alt='SICFIRE Logo' className="main-logo h-4/5"/>
       </a>
       <nav className="hidden md:block">
         <ul className="flexrow gap-4 drop-shadow">
