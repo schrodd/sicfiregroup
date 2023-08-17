@@ -12,10 +12,11 @@ function FormItem({name, label, type}: {name:string, label:string, type:string})
 
 export default function ContactUs() {
   return (
-    <section id='contacto' className="flex bg-gradient-to-t from-zinc-300 to-zinc-100">
+    <section className="flex bg-gradient-to-t from-zinc-300 to-zinc-100 relative">
+      <span id='contacto' className="anchor"></span> 
       <div className="md:w-1/2 p-10 md:pl-[15%] md:py-16 md:pr-10">
         <h2 className='border-l-8 border-orange-600 pl-3 mb-5'>CONTACTANOS</h2>
-        <form className="flex flex-wrap gap-y-3" action="https://formsubmit.co/infosicfire@gmail.com" method="POST" id='contact-form'>
+        <form className="flex flex-wrap gap-y-3" action="https://formsubmit.co/infosicfiregroup@gmail.com" method="POST" id='contact-form'>
           <FormItem name='name' label='Nombre' type='text'/>
           <FormItem name='email' label='Email' type='email'/>
           <FormItem name='tel' label='Teléfono' type='number'/>
@@ -31,8 +32,8 @@ export default function ContactUs() {
             <label htmlFor='msg' className='text-sm font-light text-zinc-400 mb-1'>Mensaje</label>
             <textarea name='msg' id='msg' className='px-3 py-2 text-zinc-700 shadow text-sm flex-grow line-clamp-3' />
           </div>
-          <input type="hidden" name="_next" value="http://localhost:3000/website"></input>
-          {/* <input type="hidden" name="_cc" value="another@email.com"></input> */}
+          <input type="hidden" name="_next" value="https://sicfiregroup.com/gracias"></input>
+          <input type="hidden" name="_cc" value="nfigueredo@sicfiregroup.com,cportorreal@sicfiregroup.com"></input>
           <input type="hidden" name="_captcha" value="false"></input>
           <button type="submit" className='flexrow bg-orange-600 hover:bg-orange-500 transition text-white px-3 py-2 mt-3 mr-3 shadow-lg gap-2 w-full'>Enviar <PiPaperPlaneRightBold/></button>
         </form>

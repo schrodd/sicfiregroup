@@ -1,8 +1,32 @@
 'use client'
 import { PiShieldCheckBold, PiArrowsLeftRightBold, PiClipboardTextBold, PiSealCheckBold } from 'react-icons/pi'
 import Replicate from './Replicate'
+import Swiper from 'swiper'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { useEffect } from 'react'
+import Script from 'next/script';
 
 export default function MoreInfo() {
+  useEffect(() => {
+    const swiper = new Swiper('.swiper', {
+      modules: [Navigation, Pagination, Autoplay],
+      loop: true,
+      pagination: { el: '.swiper-pagination' },  
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+        pauseOnMouseEnter: true
+      },
+      speed: 1000,
+    })
+  }, [])
+  const swiperImgs = ["1", "2", "3", "4", "5"]
   return (
     <section className="bg-[url('/bgorange.jpg')] bg-cover bg-center bg-fixed flexcol p-10 md:py-16 md:px-[15%] text-center gap-5 text-zinc-600">
       <PiShieldCheckBold className='text-white w-10 h-10'/>
@@ -16,7 +40,19 @@ export default function MoreInfo() {
           <p className="md:text-justify text-sm">Incorporamos el diseño y fabricación de tanques de reserva de agua tanto para el cumplimiento de normas locales como de normas internacionales.<br/>Diseñamos tanques de reserva de agua para el sistema de extinción de planta o negocio, garantizamos y aseguramos un suministro constante y confiable para los sistemas de extinción todos diseñados bajo estrictas normas y las más exigentes siempre a medida del proyecto y necesidad de cada cliente.
           </p>
         </div>
-        <img src='/agua.jpg' alt="About us text container" className={`w-full h:auto md:w-auto md:h-52`}/>
+        <div className='swiper tanques'>
+          <div className='swiper-wrapper w-[300px]'>
+            {swiperImgs.map((e,i) => (
+              <div key={i} className='swiper-slide'>
+                <img src={`/tanques/${e}.jpg`} alt="img tanque de agua" />
+              </div>
+            ))}
+          </div>
+          <div className="swiper-pagination"></div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </div>
+        {/* <img src='/agua.jpg' alt="About us text container" className={`w-full md:w-auto md:h-52`}/> */}
       </div>
       <div className='w-full md:flex gap-5 max-w-[1000px]'>
         <div className='flex flex-col p-5 md:py-8 md:px-10 bg-gradient-to-t from-zinc-200 to-zinc-100 shadow-lg gap-2 flex-1 mb-2 md:mb-0'>

@@ -99,7 +99,8 @@ export default function Clients() {
     setPopupOpen(state => !state)
   }
   return (
-    <section className="flexcol relative text-white p-10 md:py-16 gap-10 md:px-[15%]" id='clientes'>
+    <section className="flexcol relative text-white p-10 md:py-16 gap-10 md:px-[15%]">
+      <span id='clientes' className="anchor"></span> 
       <Title>CLIENTES</Title>
       <div className="flex flex-wrap justify-center max-w-[1200px] w-full gap-y-5">
         {clientes.map((e,i) => <Client key={i} img={e.img} togglePopup={togglePopup} index={i}>{e.name}</Client>)}

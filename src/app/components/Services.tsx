@@ -17,7 +17,7 @@ const featuredServices: {name: string, icon: React.ReactNode}[] = [
 
 function FeaturedService({icon, children}: {icon: React.ReactNode, children: string}){
   return (
-    <div className="flexcol bg-zinc-100 w-full md:w-1/4 min-h-[140px] outline outline-1 outline-zinc-300 text-zinc-500 shadow">
+    <div className="flexcol bg-zinc-100 w-full md:w-1/4 min-h-[140px] outline outline-1 outline-zinc-300 text-zinc-500 hover:text-orange-600 shadow transition">
       {icon}
       <h3 className='w-2/3 text-center text-sm mt-2'>{children}</h3>
     </div>
@@ -62,7 +62,7 @@ function ThirdSub({toggle, items}: {toggle: (n:number) => void, items: serviceDr
             <p>{e.title}</p>
             <PiCaretRightLight className={`${e.active && 'rotate-90'} transition w-6 h-6`}/>
           </button>
-          <div className={`${e.active ? 'max-h-none px-8 py-5 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white shadow-lg slow-animation text-zinc-600 text-sm`}>
+          <div className={`${e.active ? 'max-h-none px-6 py-5 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white shadow-lg slow-animation text-zinc-600 text-sm`}>
             {e.content}
           </div>
         </div>
@@ -109,26 +109,32 @@ function ObrasService(){
 
 function MaintenanceService(){
   return (
-    <div className='flex flex-col gap-3'>
-      <p className=''>Realizamos mantenimientos mensuales trimestrales y anuales de las instalaciones fijas siempre respetando y garantizando la prevención y la extinción de incendio según programas de nuestros clientes, según normas IRAM 3546 y la norma NFPA 25 “Inspecciones, Pruebas, Mantenimiento”, resoluciones del GCABA, de la Agencia Gubernamental de Control, y otras resoluciones vigentes para el mantenimiento de instalaciones fijas contra incendios.</p>
-      <p>Ofrecemos mantenimiento de los sistemas de protección contra incendios y desarrollamos operaciones de mantenimiento específicas para cada sistema. A través del mantenimiento sometemos a las instalaciones a las condiciones que se darían en el caso de producirse un incendio. De esta manera, medimos y parametrizamos la respuesta que ofrecen los sistemas y comprobamos que cumplen las prestaciones para las que fueron diseñadas e instaladas.</p>
+    <div className='flex flex-col md:flex-row gap-3'>
+      <div>
+        <p className=''>Realizamos mantenimientos mensuales trimestrales y anuales de las instalaciones fijas siempre respetando y garantizando la prevención y la extinción de incendio según programas de nuestros clientes, según normas IRAM 3546 y la norma NFPA 25 “Inspecciones, Pruebas, Mantenimiento”, resoluciones del GCABA, de la Agencia Gubernamental de Control, y otras resoluciones vigentes para el mantenimiento de instalaciones fijas contra incendios.</p>
+        <p>Ofrecemos mantenimiento de los sistemas de protección contra incendios y desarrollamos operaciones de mantenimiento específicas para cada sistema. A través del mantenimiento sometemos a las instalaciones a las condiciones que se darían en el caso de producirse un incendio. De esta manera, medimos y parametrizamos la respuesta que ofrecen los sistemas y comprobamos que cumplen las prestaciones para las que fueron diseñadas e instaladas.</p>
+      </div>
+      <img src="/serv/3/ing.jpg" alt="bomberos" className='w-[350px] h-fit shadow-lg'/>
     </div>
   )
 }
 
 function ConsultingService(){
   return (
-    <div className='flex flex-col gap-3'>
-      <p className=''>Brindamos el servicio de técnicos en seguridad e higiene en obras para distintas necesidades de nuestros clientes:</p>
-      <ul className='list-disc list-inside'>
-        <li>Capacitaciones, conferencias, entrenamientos, planes y simulacros de evacuación, informes en base a auditorías externas de verificación de estado de cumplimiento de las normativas vigentes en higiene y seguridad en el trabajo, calidad y medio ambiente</li>
-        <li>Informes en base a auditorías externas de verificación de estado de cumplimiento de las normativas vigentes en higiene y seguridad en el trabajo, calidad y medio ambiente</li>
-        <li>Programas de seguridad, procedimientos de trabajo seguro, análisis de riesgo, optimización de prevención de riesgos laborales</li>
-        <li>Mediciones de ambiente de trabajo, según protocolos actualizados y bajo normativa vigente; ruido laboral, puesta a tierra, iluminación, carga térmica, carga de fuego, entre otros</li>
-        <li>Planes de evacuación. Sistema de autoprotección Ley 5920/15 (CABA)</li>
-        <li>Auditorías de cumplimiento de las normativas aplicables. Relevamientos, auditorías e informes técnicos según las exigencias y necesidades del cliente siempre acatando las disposiciones reglamentarias y leyes nacionales y provinciales, manteniendo la exigencia de la ley 19.587 del decreto 351 de higiene y seguridad en el trabajo</li>
-        <li>Ejecución de planos antisiniestrales con gestión de aprobación para habilitación de industrias</li>
-      </ul>
+    <div className='flex flex-col md:flex-row gap-3'>
+      <div>
+        <p className=''>Brindamos el servicio de técnicos en seguridad e higiene en obras para distintas necesidades de nuestros clientes:</p>
+        <ul className='pl-4 pt-2 list-disc'>
+          <li>Capacitaciones, conferencias, entrenamientos, planes y simulacros de evacuación, informes en base a auditorías externas de verificación de estado de cumplimiento de las normativas vigentes en higiene y seguridad en el trabajo, calidad y medio ambiente</li>
+          <li>Informes en base a auditorías externas de verificación de estado de cumplimiento de las normativas vigentes en higiene y seguridad en el trabajo, calidad y medio ambiente</li>
+          <li>Programas de seguridad, procedimientos de trabajo seguro, análisis de riesgo, optimización de prevención de riesgos laborales</li>
+          <li>Mediciones de ambiente de trabajo, según protocolos actualizados y bajo normativa vigente; ruido laboral, puesta a tierra, iluminación, carga térmica, carga de fuego, entre otros</li>
+          <li>Planes de evacuación. Sistema de autoprotección Ley 5920/15 (CABA)</li>
+          <li>Auditorías de cumplimiento de las normativas aplicables. Relevamientos, auditorías e informes técnicos según las exigencias y necesidades del cliente siempre acatando las disposiciones reglamentarias y leyes nacionales y provinciales, manteniendo la exigencia de la ley 19.587 del decreto 351 de higiene y seguridad en el trabajo</li>
+          <li>Ejecución de planos antisiniestrales con gestión de aprobación para habilitación de industrias</li>
+        </ul>
+      </div>
+      <img src="/serv/4/bomb.jpg" alt="bomberos" className='w-[350px] h-fit shadow-lg'/>
     </div>
   )
 }
@@ -171,7 +177,8 @@ export default function Services() {
     })
   }
   return (
-    <section id='servicios' className="bg-gradient-to-t from-zinc-300 to-zinc-100 py-10 md:py-16 flexcol px-[10%] md:px-[15%] gap-16">
+    <section className="bg-gradient-to-t from-zinc-300 to-zinc-100 py-10 md:py-16 flexcol px-6 md:px-[15%] gap-16 relative">
+      <span id='servicios' className="anchor"></span> 
       <FirstSub />
       <SecondSub />
       <ThirdSub toggle={toggleDropdown} items={dropdown}/>

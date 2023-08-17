@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+:root {
+  --swiper-theme-color: white !important;
+}
+
 .cont {
   @apply bg-white border-slate-300 border-solid p-5 text-gray-500 shadow-lg
 }
@@ -26,10 +30,6 @@ h2 {
   @apply tracking-widest text-xl font-bold
 }
 
-img.main-logo {
-  max-width: 60px;
-}
-
 button, a {
   cursor: pointer;
 }
@@ -48,4 +48,20 @@ button, a {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-orange-600
+}
+
+.swiper.tanques {
+  @apply max-w-[300px]
+}
+
+.swiper-button-prev, .swiper-button-next {
+  @apply scale-50 opacity-50 hover:opacity-100
+}
+
+.swiper-pagination {
+  @apply opacity-50
+}
+
+.anchor {
+  @apply -top-[100px] absolute
 }
